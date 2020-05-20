@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width:1300px;
+    overflow:auto;
+}
+.logo{
+    height:400px;
+    width:400px;
+    bottom:57px;
+    position:relative;
+    border-radius:50%;
+    
+
+}
+
+.nav-item {
+   position: relative;
+  
+}
+
+
+.head{
+    display:flex;
+    position: relative;
+    background-color:rgba(255,255,255,0.2);
+}
+
+.fas {
+    padding:10px;
+    margin-right:10px;
+}
+.about {
+    margin-top:40px;
+}
+
+
+.h1 {
+    font-size:50px;
+    align-content:center;
+    text-align:center;
+    
+}
+.head-para {
+    
+    font-family: 'Oswald', sans-serif;
+    font-size:20px;
+}
+
+.head-text {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content:center;
+}
+.forex-sec {
+    text-align:center;
+    
+    background-color:blue;
+
+}
+
+#forex {
+    margin-top:50px;
+    width:100%;
+    height:auto;
+}
+
+#forex-text {
+    color:white;
+    font-size:50px;
+}
+
+#forex-para {
+    
+    margin-top:30px;
+    color:white;
+}
+
+.about-para {
+    font-family: 'Oswald', sans-serif;
+    font-size:20px;
+}
+
+.fa-li {
+    padding-bottom:50px;
+    color:skyblue;
+}
+
+.fa-chart-line {
+    color:blue;
+}
+
+.course-head-text {
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    
+}
+
+.course-para {
+
+    font-size:30px;
+    padding:20px;
+}
+
+.container{
+    background-image: url("../images/logo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-position:center;
+    height:1000px;
+    position: relative;
+}
+
+.form-container {
+    position:relative;
+    left:300px;
+    top:70px;
+    z-index:3;
+}
+
+.mailerr {
+    background:Red;
+}
+
+.mailerr .texterr {
+    color:white;
+    font-weight:light;
+}
+
+.alert-success {
+    transition-timing-function:ease-in-out;
+    transition-delay:1s;
+    z-index:2;
+}
+
+nav {
+    background-color:rgba(255,255,255,0.3) !important;
+
+}
+
+nav a:hover{
+    background-color: rgba(255, 255, 255,0.3) !important;
+}
+
+.purchase-head {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    background-color: grey;
+    font-family:'Oswald',sans-serif;
+}
+
+.purchase-form{
+    position:relative;
+    left:150px;
+    display:none;
+    
+}
+
+
+.purchase-logo {
+    height:300px;
+    width:300px;
+    border-radius:50%;
+    text-align:center;
+}
+
+.card:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+
+/**
+ * The CSS shown here will not be introduced in the Quickstart guide, but shows
+ * how you can use CSS to style your Element's container.
+ */
+ .StripeElement {
+    box-sizing: border-box;
+  
+    height: 40px;
+  
+    padding: 10px 12px;
+  
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: white;
+  
+    box-shadow: 0 1px 3px 0 #e6ebf1;
+    -webkit-transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease;
+  }
+  
+  .StripeElement--focus {
+    box-shadow: 0 1px 3px 0 #cfd7df;
+  }
+  
+  .StripeElement--invalid {
+    border-color: #fa755a;
+  }
+  
+  .StripeElement--webkit-autofill {
+    background-color: #fefde5 !important;
+  }
+
+#overlay{
+    position:fixed;
+    opacity:0;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(0,0,0,.5);
+    pointer-events:none;
+    transition:200ms ease-in-out;
+  }
+
+#overylay.active{
+    opacity:1;
+    pointer-events:all;
+}
+
+.modal {
+    z-index:10;
+    transform: translate(-50%,-50%) scale(0);
+    transition:200ms ease-in-out;
+}
+
+.model.active {
+    transform: translate(-50%,-50%) scale(1);
+}       
+
+/**
+For mobile devices
+**/
+
+/**
+ For devices that are large in size, like desktops. 
+ The following media queries are so that the nav links are always on the right of the screen
+ for large and medium screens, but not for small screens
+**/
+@media (min-width:992px) {
+    .nav-item {
+        position:relative;
+        left:600px;
+    }
+    
+
+}
+/**
+ For devices that are medium in size, like tablets
+**/
+@media (min-width:768px) {
+    .nav-item {
+        position:relative;
+        left:600px;
+        
+    }
+    
+}
+
+@media screen and (max-width:576px) {
+    .logo {
+        position:relative;
+        top:4px;
+        height:300px;
+        width:300px;
+    }
+    .purchase-form {
+        display:block;
+    }
+    .container {
+        display:none;
+    }
+    .head {
+        display:flex;
+        flex-direction: column;
+        margin:10px;
+    }
+    #footer {
+        flex-wrap:wrap;
+    }
+}
