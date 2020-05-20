@@ -299,4 +299,7 @@ For mobile devices
     #footer {
         flex-wrap:wrap;
     }
+    #for{
+        width:50%;
+    }
 }

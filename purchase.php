@@ -28,8 +28,8 @@ session_start();
         <div class="section mt-4 d-flex justify-content-center">
             <div class="btn-group" role= "group">
                 <a href="purchase.php" class="btn btn-primary">Debit/Credit Card</a>
-                <a href="zelle.php" class="btn btn-secondary">Zelle</a>
-                <a href="cashapp" class="btn btn-secondary">CashApp</a>
+                <!-- <a href="zelle.php" class="btn btn-secondary">Zelle</a> -->
+                <a href="cashapp.php" class="btn btn-secondary">CashApp</a>
             </div>
         </div>
     
