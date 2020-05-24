@@ -1,5 +1,4 @@
 <?php
-
 require_once('vendor/autoload.php');
 \Stripe\Stripe::setApiKey('sk_test_A27S6oaoKkqVI5dwSwA8CMyA00mzoerNOb');
 

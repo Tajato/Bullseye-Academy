@@ -1,5 +1,22 @@
 <?php
+ob_start();
 session_start();
+?>
+
+<?php
+    if ($_GET['success'] == 'signup') {
+        header("refresh:5;url=login.php");
+
+        echo "<p class='alert alert-success m-5'>You have successfully signed up! You will be redirected to the login page in 5 seconds. If you are not, <a href='login.php'>Click here.</a>";
+        echo '<div class="d-flex justify-content-center">
+        <div class="spinner-border text-success" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>';
+      
+
+      
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,22 +30,7 @@ session_start();
     <script src="https://kit.fontawesome.com/0d4c0a0b4d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-
-<?php
-
-if (isset($_GET['success'])) {
-    if ($_GET['success'] == 'signup') {
-        header("refresh:5;url=login.php");
-        echo "<p class='alert alert-success m-5'>You have successfully signed up! You will be redirected to the login page in 5 seconds. If you are not, <a href='login.php'>Click here.</a>";
-        echo '<div class="d-flex justify-content-center">
-        <div class="spinner-border text-success" role="status">
-          <span class="sr-only">Loading...</span>
-        </div>
-      </div>';
-    }
-}
-?>
-
 </body>
 </html>
+
+<?php ob_flush(); ?>

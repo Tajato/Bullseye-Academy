@@ -9,17 +9,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Courses</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js" async></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" async></script>
     <link href="assets/css/style.css?v=0.001" rel="stylesheet">
     <script src="assets/js/main.js" async></script>
-    <script src="https://kit.fontawesome.com/0d4c0a0b4d.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0d4c0a0b4d.js" crossorigin="anonymous" async></script>
 
 </head>
 <body>
     <header>
-    <?php
+<?php
      if (isset($_SESSION['email'])) {
         
     echo '<nav class="navbar navbar-expand-sm navbar-light bg-dark">
@@ -61,7 +61,7 @@
       </div>
     </nav>';
      }
-      ?>
+?>
       <div class="head">
         <img src="assets/images/logo.jpg" class="logo">
         <div class="course-head-text">
@@ -78,7 +78,7 @@
               <!--<img class="card-img-top" src="..." alt="Card image cap">-->
               <i style="color:blue;" class="fas fa-balance-scale fa-5x text-center"></i>
 
-              <p class="text-center" style="font-size:20px;position:relative;top:20px;">$250.00 USD</p>
+              <p class="text-center" style="font-size:20px;position:relative;top:20px;">$300.00 USD</p>
               <div class="card-body">
                 <h5 class="card-title"></h5>
                 <ul class="card-text p-2  m-2 fa-ul">

@@ -21,7 +21,7 @@ session_start();
         <form class="form-container m-3" action="signup.inc.php" method="POST">
             <h5 style="position:relative;bottom:30px;font-size:30px;">Member Signup</h5>
             <div class="form-group">
-            <?php
+<?php
                   if (isset($_GET['error'])) {
                   if ($_GET['error'] == 'taken') {
               echo '<p class="text-danger">User already exists!</p>';
@@ -29,7 +29,7 @@ session_start();
                   } else {
                     echo "<p class='text-success'>Step into financial greatness</p>";
                   }
-            ?>
+?>
               <label for="exampleInputEmail1">Email address</label>
               <input type="email" name="mail" class="form-control" id="inputEmail2" aria-describedby="emailHelp" placeholder="Enter email" required>
                 
@@ -61,8 +61,7 @@ session_start();
         <div class="card-body">
       <form action="signup.inc.php" method="post" id="payment-form">
         <div class="form-group">
-
-        <?php
+<?php
                   if (isset($_GET['error'])) {
                   if ($_GET['error'] == 'taken') {
               echo '<p class="text-danger">User already exists!</p>';
@@ -70,8 +69,7 @@ session_start();
                   } else {
                     echo "<p class='text-success'>Step into financial greatness</p>";
                   }
-            ?>
-        
+?>
         <input type="email" class="form-control StripeElement StripeElement--empty" name="mail"  placeholder="Email Address" required>
         </div>
 
@@ -80,7 +78,7 @@ session_start();
         <input type="password"  class="form-control StripeElement StripeElement--empty" name="pwd" id="exampleInputPassword2" placeholder="Password" required>
         
         
-        <button href="" name="signup-submit" class="btn btn-primary"><i class="fas fa-user-plus"></i>Sign up </button>
+        <button href="" name="signup-submit" class="btn btn-primary m-3"><i class="fas fa-user-plus"></i>Sign up </button>
         <p class="m-2">Already a member? <a href="login.php" class="">Login</a></p>
     </form>
   </div>

@@ -1,7 +1,5 @@
 <?php
-
 session_start();
-
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +19,7 @@ session_start();
 </head>
 <body>
     <header>
-    <?php
+<?php
      if (isset($_SESSION['email'])) {
         
     echo '<nav class="navbar navbar-expand-sm navbar-light bg-dark">
@@ -61,7 +59,7 @@ session_start();
       </div>
     </nav>';
      }
-      ?>
+?>
     </header>
       <div class="head">
           <img src="assets/images/logo.jpg" class="logo">

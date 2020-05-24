@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +22,7 @@ session_start();
         <form class="form-container m-3" action="login.inc.php" method="POST">
             <h5 style="position:relative;bottom:30px;font-size:30px;">Member Login</h5>
             <div class="form-group">
-            <?php
+<?php
                   if (isset($_GET['error'])) {
                   if ($_GET['error'] == 'incorrect') {
               echo '<p class="text-danger"> Incorrect email or password</p>';
@@ -31,7 +30,7 @@ session_start();
                   } else {
                     echo "<p class='text-success'>Please login</p>";
                   }
-            ?>
+?>
               <label for="exampleInputEmail2">Email address</label>
               <input type="email" name="mail" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
               
@@ -64,7 +63,7 @@ session_start();
       <form action="login.inc.php" method="post" id="payment-form">
         <div class="form-group">
 
-        <?php
+<?php
                   if (isset($_GET['error'])) {
                   if ($_GET['error'] == 'incorrect') {
               echo '<p class="text-danger"> Incorrect email or password</p>';
@@ -72,8 +71,7 @@ session_start();
                   } else {
                     echo "<p class='text-success'>Please login</p>";
                   }
-            ?>
-        
+?>
         <input type="email" class="form-control StripeElement StripeElement--empty" name="mail"  placeholder="Email Address" required>
         </div>
 

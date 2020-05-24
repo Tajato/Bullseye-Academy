@@ -1,5 +1,5 @@
 <?php
-
+ob_start();
 require 'dbh.php';
 
 if (isset($_POST['purchase-submit1'])) {
@@ -79,3 +79,5 @@ if (isset($_POST['purchase-submit1'])) {
                 exit();
             }
 }
+
+ob_flush();

@@ -1,7 +1,5 @@
 <?php
-
 session_start();
-
 ?>
 
 <!DOCTYPE html>
@@ -9,27 +7,28 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Bulleyes Online Forex Trading">
-    <meta name="keywords" content="forex, trading, online trading, money,class,online class,entrepeneur,business,">
+    <meta name="keywords" content="bullseyeacademyllc.com,forex, trading, online trading, money,class,online class,entrepeneur,business,">
     <meta name="author" content="Deangelo Phillips">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="2j76CapQBq2lhPy4FGU1F_KZHg9ZA1QODfdztT0FlBw" />
     <title>Home</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js" async></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" async></script>
 
     <link href="assets/css/style.css?v=0.001" rel="stylesheet">
     <!-- <script src="assets/js/main.js" defer></script> -->
-    <script src="https://kit.fontawesome.com/0d4c0a0b4d.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0d4c0a0b4d.js" crossorigin="anonymous" async></script>
 
 </head>
 <body>
     <header>
-    <?php
+<?php
      if (isset($_SESSION['email'])) {
-        
+
     echo '<nav class="navbar navbar-expand-sm navbar-light bg-dark">
-        
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -40,18 +39,18 @@ session_start();
             <a href="#student-results" class="nav-item nav-link">Student Results</a>
             <a href="#footer" class="nav-item nav-link" >Contact</a>
             <a href="refundpolicy.php" class="nav-item nav-link you" >Return Policy</a>
-            
+
 
             <a href="logout.php" style="position:relative;" class="nav-item nav-link text-primary p-2">Logout</a>
-          
-            
+
+
           </div>
         </div>
       </nav>';
-     
+
      } else {
       echo '<nav class="navbar navbar-expand-sm navbar-light bg-dark">
-        
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -63,17 +62,17 @@ session_start();
           <a href="courses.php" class="nav-item nav-link" >Courses</a>
           <a href="#student-results" class="nav-item nav-link">Student Results</a>
           <a href="#footer" class="nav-item nav-link">Contact</a>
-        
+
           <a href="refundpolicy.php" class="nav-item nav-link you" >Return Policy</a>
         </div>
       </div>
     </nav>';
      }
-      ?>
+?>
       <div class="head">
           <img src="assets/images/logo.jpg" class="logo">
           <div class="head-text">
-    
+
           <h1 class="h1"><i class="fas fa-door-open"></i>Welcome!</h1>
           <p class="head-para">Thank you for choosing Bullseye Academy, where your financial freedom is our number one priority. With dozens of consistenly profitable students currently enrolled, we are home to the most effective educational system for learning how to trade in the foreign exchange market. </p>
             </div>
@@ -90,23 +89,27 @@ session_start();
         </video>
       </section>
 
-      <section class="about">
+      <section class="about mb-5">
           <h1 style="text-align:center; font-size:50px;"><i class="far fa-handshake fa-lg" style="text-align:center;"></i>
 
             Meet The CEO</h1>
-          <p class="about-para">Hi, my name is D’Angelo Phillips. I am a 20 year old entrepreneur who was born and raised in St. Catherine, Jamaica. 
+          <p class="about-para">Hi, my name is D’Angelo Phillips. I am a 20 year old entrepreneur who was born and raised in St. Catherine, Jamaica.
               I am currently pursuing a dual degree in Mechanical Engineering and Computer Science at the renowned Pennsylvania State University.
-                Growing up I’ve always had an entrepreneurship mindset. 
+                Growing up I’ve always had an entrepreneurship mindset.
+
               It is a very firm belief of mine that people possess all the power they need in order to live life on their own terms and that working an ordinary 9-5 job would never suffice
                and allow an individual to live their life to the fullest.
                After seeing many people following the traditional path of earning an income, I realized that the majority was missing out on the pleasures that life really has to offer. </p>
-            <p class="about-para">The aim of 90% of people in the working world is to be Financially Free and Recession Proof, however, that will never happen if one is working on another’s terms as you can be dismissed at any point in time. 
+               <p class="text-center">
+               <img src="assets/images/ceo.jpeg" id="ceo">
+              </p>
+            <p class="about-para">The aim of 90% of people in the working world is to be Financially Free and Recession Proof, however, that will never happen if one is working on another’s terms as you can be dismissed at any point in time.
                 After going through the process of perfecting my Forex skill-set, I started trading and making consistent profits with very minimal losses for several months to date. The process of mastering my skill-set opened my eyes to how powerful and lucrative the Forex market truly is. My style of trading and education that I offer has proven itself repeatedly to be of the highest value and I’m now devoted to sharing it with the world.
 
             </p>
       </section>
 
-      <section id="student-results">
+      <section id="student-results mb-5">
       <h1 class="text-center mb-4" style="font-size:50px;"><i class="fas fa-user-ninja fa-lg"></i>Our Student Results</h1>
         <div class="card-columns ml-2">
         <div class="card w-75 ">
@@ -226,10 +229,10 @@ session_start();
           <a href="https://www.snapchat.com/add/dangelo_876" class=" nav-link" target="_blank" ><i class="fab fa-snapchat-ghost fa-lg"></i></a>
           <a href="" class="nav-link " ><i class=" nav-link fas fa-phone-volume fa-lg"></i>(876) 451-7583</a>
           <a href="" class="nav-link" ><i class="nav-link fas fa-phone-volume fa-lg"></i>(470) 529-6212</a>
-  
+
     </nav>
 
       </footer>
-      
+
 </body>
 </html>

@@ -1,5 +1,4 @@
 <?php
-
 require 'dbh.php';
 
 
@@ -30,7 +29,7 @@ if (isset($_POST["signup-submit"])) {
 //     }
 //  } else {
     if (!empty($email) || (!empty($password))) {
-        $query = "SELECT * FROM loginsystem.users WHERE usersEmail=:usersEmail";
+        $query = "SELECT * FROM richfore_loginsystem.users WHERE usersEmail=:usersEmail";
     $stmt = $conn->prepare($query);
     // $query->bindParam(":usersEmail", $email);
     //  $query->bindParam(":usersPwd", $password);
@@ -54,7 +53,7 @@ if (isset($_POST["signup-submit"])) {
 
 
     
-    $query = "INSERT INTO loginsystem.users (usersEmail,usersPwd) 
+    $query = "INSERT INTO richfore_loginsystem.users (usersEmail,usersPwd) 
     VALUES(:usersEmail, :usersPwd)";
     $stmt = $conn->prepare($query);
     // $query->bindParam(":usersEmail", $email);

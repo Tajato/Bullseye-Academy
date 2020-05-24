@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -32,7 +31,7 @@ session_start();
                 <a href="cashapp.php" class="btn btn-secondary">CashApp</a>
             </div>
         </div>
-    <section class="purchase-form">
+    <section class="shop-form">
     <div class="card m-3 mt-5 w-75 text-center">
         <h5 class="card-header text-center">2 Month 1-on-1 Online Forex Trading Course [$550USD]</h5>
   <div class="card-body">

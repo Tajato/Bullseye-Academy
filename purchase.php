@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,9 +11,9 @@ session_start();
     
     <link href="assets/css/style.css" rel="stylesheet">
     <script src="https://js.stripe.com/v3/"></script>
-    <script src="assets/js/charge.js" defer></script>
-    <script src="jquery-3.4.1.min.js"></script>
-    <script src="https://kit.fontawesome.com/0d4c0a0b4d.js" crossorigin="anonymous"></script>
+    <script src="assets/js/charge.js" async></script>
+    <script src="jquery-3.4.1.min.js" async></script>
+    <script src="https://kit.fontawesome.com/0d4c0a0b4d.js" crossorigin="anonymous" async></script>
     
 </head>
 <body>
@@ -33,10 +32,10 @@ session_start();
             </div>
         </div>
     
-        <section class="purchase-form">
+        <section class="shop-form">
     <div>
     <div class="card m-3 w-75 text-center">
-        <h5 class="card-header text-center">2 Month Online Forex Trading Course [$250USD]</h5>
+        <h5 class="card-header text-center">2 Month Online Forex Trading Course [$300USD]</h5>
   <div class="card-body">
       <form action="charge.php" method="post" id="payment-form">
         <div class="form-group">
@@ -55,7 +54,7 @@ session_start();
         </div>
         <div class="form-group" style="display:none;">
         
-        <input type="number" class="form-control StripeElement StripeElement--empty" name="amount" value="25000" placeholder="Amount" required>
+        <input type="number" class="form-control StripeElement StripeElement--empty" name="amount" value="30000" placeholder="Amount" required>
         </div>
 
         <div class="form-group" style="display:none;">
@@ -81,53 +80,5 @@ session_start();
   </div>
 </div>
 </section>
-    
-
-
-    <!-- <?php
-     if (isset($_SESSION['email'])) {
-        
-    echo '<nav class="navbar navbar-expand-sm navbar-light bg-success">
-        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a href="index1.php" class="nav-item nav-link active">Home <span class="sr-only">(current)</span></a>
-            <a href="courses.php" class="nav-item nav-link bg-primary" >Courses</a>
-            <a href="#" class="nav-item nav-link" >Contact</a>
-            <a href="#" class="nav-item nav-link" >Return Policy</a>
-            <a href="#student-results" class="nav-item nav-link">Student Results</a>
-
-            <a href="logout.php" style="position:relative;" class="nav-item nav-link text-primary p-2">Logout</a>
-          
-            
-          </div>
-        </div>
-      </nav>';
-     } else {
-      echo '<nav class="navbar navbar-expand-sm navbar-light bg-light">
-        
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a href="index1.php" class="nav-item nav-link active" >Home <span class="sr-only">(current)</span></a>
-          <a href="signup.php" class="nav-item nav-link" >Sign Up</a>
-          <a href="login.php" class="nav-item nav-link bg-muted" >Login</a>
-          <a href="courses.php" class="nav-item nav-link" >Courses</a>
-          <a href="#" class="nav-item nav-link" >Contact</a>
-          <a href="#student-results" class="nav-item nav-link">Student Results</a>
-
-          <a href="#" class="nav-item nav-link" >Return Policy</a>
-        </div>
-      </div>
-    </nav>';
-     }
-      ?>
-       -->
-      
 </body>
 </html>
