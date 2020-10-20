@@ -9,6 +9,10 @@ html {
 body {
     max-width:auto;
     overflow:auto;
+    margin:0;
+    padding:0;
+    background-color: 	#FFFFF0;
+
 }
 .logo{
     height:400px;
@@ -20,22 +24,58 @@ body {
 
 }
 
+/* .navbar-nav {
+    position:relative;
+    right:300px;
+} */
+
+#showcase {
+    
+    background-image:url('../images/banner.jpg');
+    background-size:cover;
+    background-position:center;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    color:white;
+}
+
+#showcase h1 {
+    font-size:60px;
+}
+
+.nav-item {
+    font-weight:bold;
+    text-align:center;
+}
+
+
+
+.navbar-brand {
+    display:none;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+    color:white;
+}
+
+
 #ceo {
     width:50%;
     height:auto;
     border-radius:50%;
 }
 
-.nav-item {
-   position: relative;
-  
-}
 
 
 .head{
     display:flex;
     position: relative;
     background-color:rgba(255,255,255,0.2);
+    
 }
 
 .fas {
@@ -68,7 +108,7 @@ body {
 .forex-sec {
     text-align:center;
     
-    background-color:blue;
+    background-color: #4169E1;
 
 }
 
@@ -150,14 +190,7 @@ body {
     z-index:2;
 }
 
-nav {
-    background-color:rgba(255,255,255,0.3) !important;
 
-}
-
-nav a:hover{
-    background-color: rgba(255, 255, 255,0.3) !important;
-}
 
 .purchase-head {
     display:flex;
@@ -254,6 +287,7 @@ nav a:hover{
 .model.active {
     transform: translate(-50%,-50%) scale(1);
 }       
+  
 
 /**
 For mobile devices
@@ -313,4 +347,7 @@ For mobile devices
         height:auto;
         border-radius:50%;
     }
+    
 }
+
+

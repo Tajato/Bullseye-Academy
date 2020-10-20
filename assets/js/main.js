@@ -28,9 +28,16 @@
 //     modal.classList.remove('active');
 //     overlay.classList.remove('active');
 // }
-var x = document.getElementById("exampleInputPassword2");
-function showPassword() {
-    console.log("yoo"); 
-}
+// var x = document.getElementById("exampleInputPassword2");
+// function showPassword() {
+//     console.log("yoo"); 
+// }
 
-  x.addEventListener("click",showPassword);
+//   x.addEventListener("click",showPassword);
+
+//   const toggleButton = document.getElementsByClassName('toggle-button')[0]
+//   const navbarLinks = document.getElementsByClassName('navbar-nav')[0]
+  
+//   navbarLinks.addEventListener('click', () => {
+//     navbarLinks.classList.add('active')
+//   })

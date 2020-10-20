@@ -19,44 +19,44 @@ session_start();
     <header class="purchase-head">
         <img src="assets/images/logo.jpg" class="purchase-logo">
         <h1>Purchase Below</h1>
-        <?php 
-            
+        <?php
+
         ?>
     </header>
     <div class="section mt-4 d-flex justify-content-center">
             <div class="btn-group" role= "group">
                 <a href="purchase.php" class="btn btn-primary">Debit/Credit Card</a>
-        
+
                 <!-- <a href="zelle.php" class="btn btn-secondary">Zelle</a> -->
                 <a href="cashapp.php" class="btn btn-secondary">CashApp</a>
             </div>
         </div>
     <section class="shop-form">
     <div class="card m-3 mt-5 w-75 text-center">
-        <h5 class="card-header text-center">4 Month Online Forex Trading Course [$400USD]</h5>
+        <h5 class="card-header text-center">4 Month Online Forex Trading Course [$450USD]</h5>
   <div class="card-body">
       <form action="charge.php" method="post" id="payment-form">
         <div class="form-group">
-        
+
         <input type="name" class="form-control StripeElement StripeElement--empty" name="first_name"  placeholder="First Name" required>
         </div>
 
         <div class="form-group">
-        
+
         <input type="name" class="form-control StripeElement StripeElement--empty" name="last_name"  placeholder="Last Name" required>
         </div>
 
         <div class="form-group">
-        
+
         <input type="email" class="form-control StripeElement StripeElement--empty" name="email" value="<?php echo $_SESSION["email"];?>" placeholder="Email Address" required>
         </div>
         <div class="form-group" style="display:none;">
-        
+
         <input type="number" class="form-control StripeElement StripeElement--empty" name="amount" value="40000" placeholder="Amount" required>
         </div>
 
         <div class="form-group" style="display:none;">
-        
+
         <input type="text" class="form-control StripeElement StripeElement--empty" name="description" value="4 Month Online Forex Trading Course" placeholder="Description" required>
         </div>
 
